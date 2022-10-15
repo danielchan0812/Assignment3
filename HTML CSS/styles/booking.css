@@ -1,0 +1,159 @@
+/* Universal box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the size of the body */
+body {
+    width: 99%;
+  }
+  
+  /* Style the header */
+  .header {
+      background-color:rgb(245, 249, 245);
+      font-style: italic;
+      font-size: 4vw;
+      text-align: center;
+      padding: 0.5vw;
+  }
+  /* Style the top navigation bar */
+  .topnav {
+      overflow: hidden;
+      background-color: rgb(134, 132, 137);
+      font-style: normal;
+      font-size: 3vw;
+      text-align: center;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+      float: right;
+      display: block;
+      color: white;
+      font-style: oblique;
+      text-align: center;
+      padding: 2vw 1vw;
+  }
+  .topnav a:hover{
+      background: rgb(104, 132, 27);
+  }
+  
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+  /* Style the reservation banner */
+
+.banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Bay_of_Islands.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 241, 241);
+    padding-bottom: 20px;
+}
+
+ /* Style the homepage banner */
+
+ .Signature{
+    min-height: 80vh;
+    max-height: 100vh;
+    background: url("HomePage3.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(250, 241, 241);
+    padding-bottom: 20px;
+}
+  /* Style the booking card */
+
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+.card-img{
+    background: url("Booking_card.jpg") center/cover no-repeat;
+    opacity: 0.5;
+}
+.banner h2{
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+.form-row{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+form select, form input{
+    display: block;
+    width: 100%;
+    margin: 15px 12px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+form input[type = text], form input[type = number], form input::placeholder, select{
+    color: #9a9a9a;
+}
+form input[type = submit]{
+    color: #fff;
+    background: #ec2e24;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form input[type = submit]:hover{
+    opacity: 0.9;
+}
+
+/* Create two equal columns that float next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 100px;
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vw;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media(max-width: 995px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
+    }
+}
+.footer {
+    background-color: rgb(48, 48, 46);
+    text-align: left;
+    padding: 0.1vw;
+    font-size: 2vw;
+    font-style: italic;
+    color: azure;
+}
